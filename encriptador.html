@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="es">
+    
+    <head>
+        <meta charset="UTF-8">
+        <title>Encriptador y Desencriptador</title>
+        <script type="text/javascript" src="codejava.js"></script>
+        <link rel="stylesheet" href="estilo.css">
+        <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    </head> 
+
+    <body>
+        <header>
+            <img src="imagenes/Vectorlogo.png" class="logo">
+        </header>
+        <main>
+            <section class="entradaEncriptada">
+                <textarea type="text" cols="40" rows="6" id="entrada" placeholder="Ingrese el texto aqui"></textarea>
+                <div>
+                    <img src="imagenes/Vector.png" class="simbolo">
+                    <h6 class="minMayus">Solo letras minúsculas y sin acentos</h6>
+                </div>
+                
+                <div class="botones">
+                    <button type="submit" class="botonEncriptar" onclick="encriptar()">Encriptar</button>
+                    <button type="submit" class="botonDesencriptar" onclick="desencriptar()">Desencriptar</button>
+                </div> 
+            </section>
+            <section class="pantallaPrevia" id="inicio">
+                <img src="imagenes/Muñeco.png" class="muñeco">
+                <p class="texto1">No hay ningún mensaje para mostrar</p>
+                <p class="texto2">Ingresa el texto que desees encriptar o desencriptar</p>
+            </section>
+            
+            <section style="display:none" class="salidaEncriptada" id="resultado">
+                <textarea type="text" cols="18" rows="15" id="salida"> </textarea>
+                <div>
+                    <button id="botonCopiar" onclick="botonCopiar()">Copiar</button>
+                </div> 
+            </section>
+        </main>
+        <footer>Desarrollado por Gastón Ramognino</footer>
+    </body>
+
+
+
+
+</html>
+
